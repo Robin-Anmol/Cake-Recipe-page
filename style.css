@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #181a1b;
+
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 70vw;
+  margin: 0 auto;
+}
+.main-heading {
+  color: #e8e6e3;
+}
+.main-subheading {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e8e6e3;
+}
+
+.dots-img {
+  padding: 5px;
+}
+
+.cake-img {
+  object-fit: contain;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0);
+  max-width: 100%;
+  margin: 2rem 0;
+  animation: cake 1200ms linear;
+}
+
+@keyframes cake {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.container {
+  display: flex;
+  margin-bottom: 100px;
+}
+b {
+  font-weight: 600;
+}
+.container-left {
+  width: 60%;
+  color: #e8e6e3;
+}
+
+.ingredients-heading {
+  font-family: "Playfair Display", serif;
+  color: #e8e6e3;
+}
+
+.ingredients-title {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.item {
+  display: flex;
+}
+
+.item-text {
+  margin-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: calc(100% - 21px);
+  margin-left: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0;
+  user-select: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #828282;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #f2994a;
+  background: #f2994a;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  background-color: #f2994a;
+  transform: rotate(45deg);
+}
+
+.instructions {
+  margin-bottom: 30px;
+}
+
+.single-instruction {
+  display: flex;
+  margin-top: 10px;
+}
+
+.instruction-content {
+  margin-top: 0;
+  margin-left: 10px;
+  width: calc(100% - 36px);
+  font-family: "Montserrat", sans-serif;
+}
+
+.instruction-content:hover {
+  color: rgb(202, 247, 0, 0.9);
+}
+
+.steps {
+  background-color: #f2994a;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container-right {
+  margin-top: 1.5rem;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-right-box {
+  width: 12vw;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  height: 315px;
+}
+
+.container-right-box-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2.5rem 1vw 2.5rem 2vw;
+}
+
+.utils-icon i {
+  color: #f2994a;
+  margin-right: 0.75rem;
+  font-size: 24px;
+}
+
+.clock-icon i {
+  color: #808080;
+  margin-right: 0.75rem;
+  font-size: 24px;
+}
+
+.container-right-box-text-header {
+  font-size: 10px;
+  color: #bdbdbd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container-right-box-text-sub {
+  font-size: 14px;
+  /* color: #333333; */
+  color: #e8e6e3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.source-link {
+  font-family: "Montserrat", sans-serif;
+  color: #808080;
+  opacity: 0.7;
+  text-decoration: none;
+  font-style: italic;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(210, 247, 2);
+}
+
+@media (max-width: 1450px) {
+  .container-right-box {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-right-box {
+    width: 20vw;
+  }
+
+  .wrapper {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .container-left {
+    width: 100%;
+  }
+
+  .container-right {
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container-right-box {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .time-info {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .servings {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .container-right-box-item {
+    margin: 1rem auto 1rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .main-subheading {
+    font-size: 12px;
+  }
+
+  .container-right-box-text-header {
+    font-size: 8px;
+  }
+
+  .container-right-box-text-sub {
+    font-size: 10px;
+  }
+
+  .ingredients-heading {
+    font-size: 18px;
+  }
+
+  .ingredients-title {
+    font-size: 16px;
+  }
+
+  .item {
+    font-size: 14px;
+  }
+
+  .instruction-content {
+    font-size: 16px;
+  }
+
+  .instruction-heading {
+    font-size: 24px;
+  }
+
+  .steps {
+    height: 30px;
+    width: 30px;
+  }
+
+  .source-link {
+    font-size: 12px;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 1em;
+  }
+}
