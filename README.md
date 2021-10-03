@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://robin-anmol.github.io/Cake-Recipe-page/">
       Demo
     </a>
     <span> | </span>
