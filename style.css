@@ -34,6 +34,7 @@ body {
 .cake-img {
   object-fit: contain;
   box-shadow: 0px 0px 20px rgba(0, 0, 0);
+  border-radius:8px;
   max-width: 100%;
   margin: 2rem 0;
   animation: cake 1200ms linear;
